@@ -1,0 +1,129 @@
+:root {
+    --accet-color: hsl(277, 56%, 61%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+}
+
+main {
+    width: 100%;
+}
+
+.card {
+    min-width: 900px;
+    width: 50%;
+    background-color: hsl(244, 38%, 16%);
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+}
+
+.img-bg {
+    background-color: var(--accet-color);
+    display: flex;
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+    
+}
+
+.right {
+    background-image: url(../images/image-header-desktop.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0 10px 10px 0;
+    mix-blend-mode: multiply;
+
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 65px 80px 50px 60px;
+    border-radius: 10px 0 0 10px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+h1 span {
+    color: hsl(277, 64%, 61%);
+   
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.548);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    width: 22em;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 35px;
+
+}
+
+.grid div:nth-child(2) {
+    margin-left: 10px;
+}
+
+
+.grid div:nth-child(3) {
+    margin-left: 15px;
+}
+
+.grid h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.grid span {
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
